@@ -14,7 +14,7 @@
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/footprint/footprint.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/footprint/footprint.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -23,7 +23,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/footprint/footprint.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/footprint/footprint.csv"
 df = pd.read_csv(url)
 ```
 
@@ -38,7 +38,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/mariokart/mariokart.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/mariokart/mariokart.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -47,7 +47,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/mariokart/mariokart.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/mariokart/mariokart.csv"
 df = pd.read_csv(url)
 ```
 
@@ -62,7 +62,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/natural-disasters/natural-disasters.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/natural-disasters/natural-disasters.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -71,7 +71,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/natural-disasters/natural-disasters.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/natural-disasters/natural-disasters.csv"
 df = pd.read_csv(url)
 ```
 
@@ -86,7 +86,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/newyork-airbnb/newyork-airbnb.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/newyork-airbnb/newyork-airbnb.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -95,7 +95,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/newyork-airbnb/newyork-airbnb.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/newyork-airbnb/newyork-airbnb.csv"
 df = pd.read_csv(url)
 ```
 
@@ -110,7 +110,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/storms/storms.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/storms/storms.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -119,7 +119,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/storms/storms.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/storms/storms.csv"
 df = pd.read_csv(url)
 ```
 
@@ -134,7 +134,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/wine/wine.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/wine/wine.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -143,6 +143,6 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/wine/wine.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/wine/wine.csv"
 df = pd.read_csv(url)
 ```

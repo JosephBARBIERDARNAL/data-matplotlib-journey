@@ -14,7 +14,7 @@ def dataset_description(dataset: str):
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/{dataset}/{dataset}.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -23,7 +23,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/{dataset}/{dataset}.csv?raw=true"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
 df = pd.read_csv(url)
 ```
 """
