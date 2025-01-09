@@ -3,7 +3,7 @@ from datasets import all_datasets
 
 
 def make_full_url(dataset: str):
-    return f"https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/{dataset}/{dataset}.csv?raw=true"
+    return f"https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
 
 
 for dataset in all_datasets:
