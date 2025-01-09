@@ -1,6 +1,8 @@
+
 <!-- Automatically generated, do not change by hand. Use script/generate_README.py instead. -->
 
 # Datasets for [matplotlib-journey.com](https://www.matplotlib-journey.com/)
+
 
 <br>
 
@@ -25,6 +27,7 @@ url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Mariokart
@@ -47,6 +50,7 @@ import pandas as pd
 url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/mariokart/mariokart.csv?raw=true"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
@@ -71,6 +75,7 @@ url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Newyork-Airbnb
@@ -94,6 +99,7 @@ url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Storms
@@ -116,6 +122,7 @@ import pandas as pd
 url = "https://github.com/JosephBARBIERDARNAL/data-matplotlib-journey/blob/main/storms/storms.csv?raw=true"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
