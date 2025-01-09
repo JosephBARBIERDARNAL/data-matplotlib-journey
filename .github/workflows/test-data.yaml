@@ -1,4 +1,4 @@
-name: Run Python Script on PR
+name: Test datasets
 
 on:
   pull_request:
