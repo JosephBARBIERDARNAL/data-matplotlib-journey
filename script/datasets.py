@@ -5,4 +5,5 @@ all_datasets = [
     "newyork-airbnb",
     "storms",
     "wine",
+    "walks",
 ]
