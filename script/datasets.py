@@ -6,4 +6,7 @@ all_datasets = [
     "storms",
     "wine",
     "walks",
+    "economic",
+    "africa-temp",
+    "netflix",
 ]
