@@ -8,3 +8,4 @@ pyproject.toml
 uv.lock
 .venv/
 sandbox.py
+/*.csv
