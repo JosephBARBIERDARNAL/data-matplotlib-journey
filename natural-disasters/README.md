@@ -1,4 +1,4 @@
-## Load the dataset from matplotlib-journey.com
+## Load the dataset in matplotlib-journey.com
 
 ```python
 import pandas as pd
