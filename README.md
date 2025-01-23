@@ -198,7 +198,7 @@ df = pd.read_csv(url)
 
 <br>
 
-### Africa-Temp
+### Game-Sales
 
 - Load the dataset from matplotlib-journey.com
 
@@ -206,7 +206,7 @@ df = pd.read_csv(url)
 import pandas as pd
 from pyodide.http import open_url
 
-url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/africa-temp/africa-temp.csv"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/game-sales/game-sales.csv"
 df = pd.read_csv(open_url(url))
 ```
 
@@ -215,7 +215,7 @@ df = pd.read_csv(open_url(url))
 ```python
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/africa-temp/africa-temp.csv"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/game-sales/game-sales.csv"
 df = pd.read_csv(url)
 ```
 
