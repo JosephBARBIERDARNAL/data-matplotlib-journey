@@ -1,6 +1,8 @@
+
 <!-- Automatically generated, do not change by hand. Use script/generate_README.py instead. -->
 
 # Datasets for [matplotlib-journey.com](https://www.matplotlib-journey.com/)
+
 
 <br>
 
@@ -25,6 +27,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Mariokart
@@ -47,6 +50,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/mariokart/mariokart.csv"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
@@ -71,6 +75,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Newyork-Airbnb
@@ -93,6 +98,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/newyork-airbnb/newyork-airbnb.csv"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
@@ -117,6 +123,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Wine
@@ -139,6 +146,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/wine/wine.csv"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
@@ -163,6 +171,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Economic
@@ -185,6 +194,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/economic/economic.csv"
 df = pd.read_csv(url)
 ```
+
 
 <br>
 
@@ -209,6 +219,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(url)
 ```
 
+
 <br>
 
 ### Netflix
@@ -230,4 +241,28 @@ import pandas as pd
 
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/netflix/netflix.csv"
 df = pd.read_csv(url)
+```
+
+
+<br>
+
+### World
+
+- Load the dataset in matplotlib-journey.com
+
+```python
+import geopandas as gpd
+from pyodide.http import open_url
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/world/world.geojson"
+df = gpd.read_file(open_url(url))
+```
+
+- Load the dataset oustide (any other environment)
+
+```python
+import geopandas as gpd
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/world/world.geojson"
+df = gpd.read_file(url)
 ```

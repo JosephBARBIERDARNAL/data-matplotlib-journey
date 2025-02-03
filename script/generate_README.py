@@ -4,6 +4,7 @@ from datasets import all_datasets
 def dataset_description(dataset: str, isGeopandas: bool):
     import_code = "import geopandas as gpd" if isGeopandas else "import pandas as pd"
     read_code = "gpd.read_file" if isGeopandas else "pd.read_csv"
+    file_extension = "geojson" if isGeopandas else "csv"
     content = f"""
 
 <br>
@@ -16,7 +17,7 @@ def dataset_description(dataset: str, isGeopandas: bool):
 {import_code}
 from pyodide.http import open_url
 
-url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.{file_extension}"
 df = {read_code}(open_url(url))
 ```
 
@@ -25,7 +26,7 @@ df = {read_code}(open_url(url))
 ```python
 {import_code}
 
-url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.{file_extension}"
 df = {read_code}(url)
 ```
 """
