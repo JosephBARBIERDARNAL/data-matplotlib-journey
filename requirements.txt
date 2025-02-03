@@ -4,6 +4,10 @@ appnope==0.1.4
     # via ipykernel
 asttokens==3.0.0
     # via stack-data
+certifi==2025.1.31
+    # via
+    #   pyogrio
+    #   pyproj
 comm==0.2.2
     # via ipykernel
 debugpy==1.8.11
@@ -12,6 +16,8 @@ decorator==5.1.1
     # via ipython
 executing==2.1.0
     # via stack-data
+geopandas==1.0.1
+    # via data-matplotlib-journey (pyproject.toml)
 ipykernel==6.29.5
     # via data-matplotlib-journey (pyproject.toml)
 ipython==8.31.0
@@ -31,11 +37,20 @@ matplotlib-inline==0.1.7
 nest-asyncio==1.6.0
     # via ipykernel
 numpy==2.2.1
-    # via pandas
+    # via
+    #   geopandas
+    #   pandas
+    #   pyogrio
+    #   shapely
 packaging==24.2
-    # via ipykernel
+    # via
+    #   geopandas
+    #   ipykernel
+    #   pyogrio
 pandas==2.2.3
-    # via data-matplotlib-journey (pyproject.toml)
+    # via
+    #   data-matplotlib-journey (pyproject.toml)
+    #   geopandas
 parso==0.8.4
     # via jedi
 pexpect==4.9.0
@@ -52,6 +67,10 @@ pure-eval==0.2.3
     # via stack-data
 pygments==2.19.1
     # via ipython
+pyogrio==0.10.0
+    # via geopandas
+pyproj==3.7.0
+    # via geopandas
 python-dateutil==2.9.0.post0
     # via
     #   jupyter-client
@@ -62,6 +81,8 @@ pyzmq==26.2.0
     # via
     #   ipykernel
     #   jupyter-client
+shapely==2.0.7
+    # via geopandas
 six==1.17.0
     # via python-dateutil
 stack-data==0.6.3
