@@ -1,7 +1,9 @@
 from datasets import all_datasets
 
 
-def dataset_description(dataset: str):
+def dataset_description(dataset: str, isGeopandas: bool):
+    import_code = "import geopandas as gpd" if isGeopandas else "import pandas as pd"
+    read_code = "gpd.read_file" if isGeopandas else "pd.read_csv"
     content = f"""
 
 <br>
@@ -11,20 +13,20 @@ def dataset_description(dataset: str):
 - Load the dataset in matplotlib-journey.com
 
 ```python
-import pandas as pd
+{import_code}
 from pyodide.http import open_url
 
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
-df = pd.read_csv(open_url(url))
+df = {read_code}(open_url(url))
 ```
 
 - Load the dataset oustide (any other environment)
 
 ```python
-import pandas as pd
+{import_code}
 
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/{dataset}/{dataset}.csv"
-df = pd.read_csv(url)
+df = {read_code}(url)
 ```
 """
     return content
@@ -42,7 +44,8 @@ def top_of_README():
 def generate_readme():
     readme_content = top_of_README()
     for dataset in all_datasets:
-        dataset_content = dataset_description(dataset)
+        isGeopandas = dataset in ["world"]
+        dataset_content = dataset_description(dataset, isGeopandas=isGeopandas)
         readme_content += dataset_content
 
     with open("README.md", "w", encoding="utf-8") as f:
