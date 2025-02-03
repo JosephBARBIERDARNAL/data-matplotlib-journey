@@ -9,7 +9,9 @@ def make_full_url(dataset: str, isGeopandas: bool):
 
 for dataset in all_datasets:
     isGeopandas = dataset in ["world"]
-    df = pd.read_csv(make_full_url(dataset, isGeopandas=isGeopandas))
+    url = make_full_url(dataset, isGeopandas=isGeopandas)
+    print(url)
+    df = pd.read_csv(url)
 
     print("-" * 50)  # Separator line
     print(f"Dataset: {dataset}")
