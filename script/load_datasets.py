@@ -1,4 +1,5 @@
 import pandas as pd
+import geopandas as gpd
 from datasets import all_datasets
 
 
@@ -10,8 +11,11 @@ def make_full_url(dataset: str, isGeopandas: bool):
 for dataset in all_datasets:
     isGeopandas = dataset in ["world"]
     url = make_full_url(dataset, isGeopandas=isGeopandas)
-    print(url)
-    df = pd.read_csv(url)
+
+    if isGeopandas:
+        df = gpd.read_file(url)
+    else:
+        df = pd.read_csv(url)
 
     print("-" * 50)  # Separator line
     print(f"Dataset: {dataset}")
