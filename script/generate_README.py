@@ -49,6 +49,10 @@ def generate_readme():
         dataset_content = dataset_description(dataset, isGeopandas=isGeopandas)
         readme_content += dataset_content
 
+        with open(f"{dataset}/README.md", "w", encoding="utf-8") as f:
+            print(f"Writing: {dataset}")
+            f.write(dataset_content)
+
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
 

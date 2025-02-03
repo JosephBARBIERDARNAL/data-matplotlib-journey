@@ -1,4 +1,10 @@
-## Load the dataset in matplotlib-journey.com
+
+
+<br>
+
+### Mariokart
+
+- Load the dataset in matplotlib-journey.com
 
 ```python
 import pandas as pd
@@ -8,7 +14,7 @@ url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-jou
 df = pd.read_csv(open_url(url))
 ```
 
-## Load the dataset oustide (any other environment)
+- Load the dataset oustide (any other environment)
 
 ```python
 import pandas as pd
