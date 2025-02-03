@@ -9,4 +9,5 @@ all_datasets = [
     "economic",
     "game-sales",
     "netflix",
+    "world",
 ]

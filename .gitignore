@@ -2,10 +2,10 @@
 *cache*
 .vscode/
 
-# uv stuff
 .python-version
 pyproject.toml
 uv.lock
 .venv/
 sandbox.py
 /*.csv
+*.json
