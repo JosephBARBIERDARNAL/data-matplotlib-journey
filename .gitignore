@@ -9,3 +9,4 @@ uv.lock
 sandbox.py
 /*.csv
 *.json
+requirements.txt
