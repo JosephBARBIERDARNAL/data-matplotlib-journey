@@ -45,7 +45,7 @@ def top_of_README():
 def generate_readme():
     readme_content = top_of_README()
     for dataset in all_datasets:
-        isGeopandas = dataset in ["world"]
+        isGeopandas = dataset in ["world", "us-counties"]
         dataset_content = dataset_description(dataset, isGeopandas=isGeopandas)
         readme_content += dataset_content
 

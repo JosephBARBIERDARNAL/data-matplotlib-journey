@@ -9,7 +9,7 @@ def make_full_url(dataset: str, isGeopandas: bool):
 
 
 for dataset in all_datasets:
-    isGeopandas = dataset in ["world"]
+    isGeopandas = dataset in ["world", "us-counties"]
     url = make_full_url(dataset, isGeopandas=isGeopandas)
 
     if isGeopandas:
