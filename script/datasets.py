@@ -12,4 +12,5 @@ all_datasets = [
     "world",
     "earthquakes",
     "CO2",
+    "us-counties",
 ]
