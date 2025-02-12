@@ -362,3 +362,27 @@ import geopandas as gpd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/newyork/newyork.geojson"
 df = gpd.read_file(url)
 ```
+
+
+<br>
+
+### Ufo
+
+- Load the dataset in matplotlib-journey.com
+
+```python
+import pandas as pd
+from pyodide.http import open_url
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/ufo/ufo.csv"
+df = pd.read_csv(open_url(url))
+```
+
+- Load the dataset oustide (any other environment)
+
+```python
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/ufo/ufo.csv"
+df = pd.read_csv(url)
+```
