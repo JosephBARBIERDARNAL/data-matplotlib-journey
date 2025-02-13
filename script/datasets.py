@@ -15,4 +15,6 @@ all_datasets = [
     "us-counties",
     "newyork",
     "ufo",
+    "accident-london",
+    "london",
 ]

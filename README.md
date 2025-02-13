@@ -386,3 +386,51 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/ufo/ufo.csv"
 df = pd.read_csv(url)
 ```
+
+
+<br>
+
+### Accident-London
+
+- Load the dataset in matplotlib-journey.com
+
+```python
+import pandas as pd
+from pyodide.http import open_url
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/accident-london/accident-london.csv"
+df = pd.read_csv(open_url(url))
+```
+
+- Load the dataset oustide (any other environment)
+
+```python
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/accident-london/accident-london.csv"
+df = pd.read_csv(url)
+```
+
+
+<br>
+
+### London
+
+- Load the dataset in matplotlib-journey.com
+
+```python
+import geopandas as gpd
+from pyodide.http import open_url
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/london/london.geojson"
+df = gpd.read_file(open_url(url))
+```
+
+- Load the dataset oustide (any other environment)
+
+```python
+import geopandas as gpd
+
+url = "https://raw.githubusercontent.com/JosephBARBIERDARNAL/data-matplotlib-journey/refs/heads/main/london/london.geojson"
+df = gpd.read_file(url)
+```
